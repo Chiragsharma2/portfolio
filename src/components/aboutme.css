@@ -1,0 +1,107 @@
+.aboutme {
+    display:flex;
+    margin: 6rem 1rem 4rem 1rem;
+    padding: 2rem;
+    flex-flow: column wrap;
+}
+
+.aboutme h1 {
+    font-size: 3rem;
+    font-family: var(--specialFont);
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--bigText);
+}
+
+.aboutme p {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    font-family: var(--smallFont);
+    line-height: 3.5rem;
+    font-weight: 300;
+    color: var(--smallText);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: clamp(2rem,3rem,4rem);
+    color:gray;
+    margin-top: 4rem;
+}
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.icon {
+    color: gray;
+    font-size: 5rem; 
+    transition: color 0.3s ease; 
+  }
+
+.icon-wrapper::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    scale:0;
+    transition: scale 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none; /* Prevent the tooltip from interfering with hover */
+    z-index: 1;
+}
+
+.icon-wrapper:hover::before {
+    scale: 1; /* Show tooltip on hover */
+}
+
+.html:hover{
+    color:rgb(230, 107, 19)
+}
+.css:hover{
+    color:rgb(93, 105, 119)
+}
+.js:hover{
+    color:rgb(214, 206, 48)
+}
+.cpp:hover{
+    color:rgb(146, 161, 175)
+}
+.java:hover{
+  color: rgb(177, 127, 19);
+}
+.python:hover{
+    color:rgb(46, 97, 141)
+}
+.react:hover{
+    color: rgb(123, 191, 251);
+}
+.node:hover{
+    color:rgb(19, 92, 34)
+}
+.tail:hover{
+    color: rgb(77, 98, 162);
+}
+.sql:hover{
+    color: color-mix(in srgb-linear, #00758f 50%, #f29111 50%);
+}
+.mongo:hover{
+    color: #205a50;
+}
+.git:hover{
+    color:#3c3d3d
+}
+

@@ -1,0 +1,115 @@
+.footer {
+    overflow: hidden;
+    border-top: 0.05rem solid rgb(227, 221, 221) ;
+    color: rgb(73, 70, 70);
+    padding: 4rem 1rem; 
+}
+  
+.footer-content {
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: calc(14px + 2*(100vw - 320px)/1600);
+    gap: 2rem;
+}
+  
+.footer-section {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-family: var(--mediumFont);
+    padding: 1rem;
+    
+    p{
+        font-family: var(--mediumFont);
+        padding-left: 0;
+        width: 60%;
+        padding-bottom: 0.5rem;
+    }
+     
+}
+  
+.footer-section h3 {
+    color: black; 
+    margin-bottom: 1rem;
+    /* font-size: 1.5rem; */
+    opacity: 0.6;
+}
+  
+  
+.contact-list,
+.refer,
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.contact-list li,
+.refer li,
+.social-links li {
+    margin-bottom: 0.5rem;
+}
+
+.refer a,
+.social-links a {
+    color: black; /* text-white */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.refer a:hover,
+.social-links a:hover {
+    color: #60a5fa;
+}
+  
+.end {
+    margin-top: 2rem;
+    color: black;
+    text-align: center;
+    font-size: calc(1rem + 2*(100vw - 320px)/50);
+    font-family: var(--specialFont);
+}
+  
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    text-align: center;
+    color: black;
+    font-family: var(--smallFont);
+    opacity: 0.8;
+}
+  
+@media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer-section {
+      margin-bottom: 0;
+      /* font-size: 1rem; */
+    }
+    .end {
+        grid-column: span 3;
+        /* font-size: 3.5rem; */
+    }
+}
+  
+@media (min-width: 1024px) {
+    .footer-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .end {
+      grid-column: span 3;
+      /* font-size: 4.5rem; */
+    }
+  
+    .footer-bottom {
+      grid-column: span 3;
+    }
+    /* .footer-section {
+        font-size: 1.2rem;
+    } */
+}
+  

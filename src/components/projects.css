@@ -1,0 +1,103 @@
+
+#projects {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    margin: 10rem 1rem;
+    padding: 0rem 20px 0rem 0px;
+}
+.project-container {
+    display: grid;
+    margin: auto;
+    padding: 1.875rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 2rem 2rem;
+    
+}
+
+.project-container h3 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    align-self: flex-end;
+    color: var(--smallText);
+    font-size: clamp(0.5rem,calc(1.5rem + 2*(100vw - 320px)/400),1.2rem);
+    font-family: var(--mediumFont);
+    font-weight: 300;
+
+}
+
+.project-container h1 {
+    margin-top: 0;
+    grid-column: 1/-1 ;
+    grid-row: 2;
+    color: var(--bigText);
+    font-family: var(--specialFont);
+    font-size: clamp(1.5rem,calc(1.5rem + 2*(100vw - 320px)/50),4.1rem);
+    font-weight: 800;
+    letter-spacing: clamp(normal,2rem,4rem);
+}
+
+.card {
+    height: clamp(5rem,40rem,45rem);
+    text-decoration: none;
+    max-width: 100%;
+    padding: 2.5rem 1rem 1rem 2.5rem;
+    text-align: justify;
+    border: 0.1rem solid black ;
+    transition: background-color 0.5s ease-in;
+}
+.card:hover {
+    background-color:rgb(182, 181, 181);
+    opacity: 0.5;
+}
+.card h1 {
+    /* font-size: 2.5rem; */
+    font-size: calc(1.5rem + 2*(100vw - 320px)/1600);
+    color: var(--bigText);
+    letter-spacing: 0.5ch;
+    font-weight: 700;
+}
+.card h3{
+    margin-top: 1rem;
+    font-weight: 500;
+    color:var(--bigText);
+}
+.card p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-family: var(--mediumFont);
+    color: var(--bigText);
+    visibility: hidden;
+    letter-spacing: 0.2ch;
+    line-height: 0.5rem;
+    opacity: 0;
+    transition:visibility 0s, opacity 0.5s linear;
+}
+
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (width >= 854px) {
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        
+    }
+    .project-container h3 {
+        letter-spacing: 0.2rem;
+    }
+}
+/* 
+@media (width >=1024px){
+    .project-container h3+h1 {
+        margin
+    }
+} */
+

@@ -1,0 +1,33 @@
+.wrapper {
+    margin: 2rem 1rem 2rem 1.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.wrapper h3{
+    color: var(--smallText);
+    font-size: 0.6rem;
+    font-weight: 300;
+    letter-spacing:0.2rem;
+    padding-bottom:0.8rem;
+    font-family:var(--mediumFont);
+}
+
+.wrapper a{
+    text-decoration:underline;
+    text-underline-offset: 7px;
+    color:var(--bigText);
+    font-size: 1.5rem;
+    font-weight:700;
+    font-family:var(--specialFont);
+}
+@media (width>=460px) {
+    .wrapper a {
+        font-size:4rem;
+    }
+    .wrapper h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.4rem;
+        font-weight: 100;
+    }
+}

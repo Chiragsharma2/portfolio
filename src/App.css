@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Idealist Sans Light";
+    src: local("Idealist Sans Light"),
+         url("./assets/fonts/IdealistSansLight.ttf")format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    
+    --bigText: black;
+    --smallText: #878a8f;
+    scroll-behavior: smooth;
+    --smallFont: "Pridi", serif;
+    --bigFont: "Taviraj", serif;    /*"Pacifico", cursive;/**/
+    --mediumFont: "Comfortaa", sans-serif;
+    --specialFont: "Autour One", system-ui;
+
+}   
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
