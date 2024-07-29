@@ -36,13 +36,13 @@ function Header({ IsLoading }) {
     return (
         <div className={`header ${IsLoading ? 'loading' : ''} ${menuOpen ? 'menu-open' : ''}`}>
             <nav className='navbar'>
-                <CustomLink to="/" className='navbar-left' onClick={closeMenu}>
+                <Link to="/" className='navbar-left' onClick={closeMenu}>
                     <img className='navbar-logo' src={logo} alt='logo' />
                     <div className='navbar-name-container'>
                         <span className='navbar-name'>CHIRAG SHARMA</span>
                         <span className='navbar-subtitle'>Full Stack Developer</span>
                     </div>
-                </CustomLink>
+                </Link>
 
                 <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <span className="menu-text">{menuOpen ? 'CLOSE' : 'MENU'}</span>
